@@ -87,3 +87,19 @@ clicks will be
 When IAT is run with the `featureGroupName` system property set to HQQ-QA, the step `And I open the application` will open the URL https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, as this is the default URL assigned to the HQQ-QA feature group in the configuration file.
 
 Alternatively, IAT could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. In fact, the `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
+
+## Splitting Up Tests
+ Tests can be split up so common Scenarios can be shared between multiple features. 
+ 
+ Any feature file can include a comment like this:
+ 
+```
+#IMPORT: zap/enablezap.fragment
+```
+
+ This comment will be replaced with the contents of the file at the specified path.
+Where a feature file has been referenced with a URL (e.g.` -DtestSource=https://whatever.com/test.feature`), the location of the imported files is found using the `importBaseUrl` system property, which defines the location from which relative imports are located.
+
+ For example, if we ran WAT with `-DimportBaseUrl=http://whatever/fragments/`, the file imported from the example above would be `http://whatever/fragments/zap/enablezap.fragment`.
+
+ If the feature file is file from the local file system, relative imports are located from the location of the feature file.
