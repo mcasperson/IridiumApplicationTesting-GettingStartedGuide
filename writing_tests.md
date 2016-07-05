@@ -54,6 +54,8 @@ Feature: Test SAR
    And I wait "30" seconds for the element with the ID of "SARQIC_button" to be displayed
 ```
  
+ See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/1.openapp), which demonstrate opening a simple test.
+ 
 ## Using Configurations
 
  Configuration files provide the ability to run the same script against different environments. Typically a test script will need to be run against multiple environments (Integration, QA, PreProduction etc) and against multiple brands. The actual steps run by the script will be largely identical in all environments and all brands, but the URLs used to access the applications change.
@@ -103,7 +105,7 @@ When IAT is run with the `featureGroupName` system property set to HQQ-QA, the s
 
 Alternatively, IAT could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. In fact, the `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
 
-See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/4.urlmappings), which demonstrates the use of a configration file.
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/4.urlmappings), which demonstrates the use of a configuration file.
 
 ## Splitting Up Tests
  Tests can be split up so common Scenarios can be shared between multiple features. 
@@ -198,6 +200,8 @@ The step `Given the alias mappings` accepts a data table which is a key/value ma
 
 The step `And I wait "30" seconds for the element with the ID alias of "ContinueButtonPage1" to be displayed` then references the alias to identify the ID of the element.
 
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/2.aliases), which demonstrates the use of aliases in a feture script.
+
 ## Using DataSet Collections
 
 Data set collections are XML files that contain multiple sets of alias mappings. These are used to run a test script multiple times with different inputs.
@@ -241,6 +245,8 @@ Data set collections then include individual data sets. Each data set is combine
 
 Data set collections are referenced with the `dataset` system property e.g.` -Ddataset=http://whatever/data/cqs-dataset.xml`
 
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/5.dataset), which demonstrate the use of data set collections.
+
 ## Running Multiple Tests
 
 As you have seen, the configuration file can hold multiple URL mappings for a feature group, and a data set collection can contain multiple data sets.
@@ -250,3 +256,5 @@ By default, each URL in a URL mapping and each data set results in a new test be
 The `numberURLs` system property can be used to limit the number of URLs that are selected when running a test e.g. `-DnumberURLs=1`. The `numberDataSets` property can be used to limit the number of data sets that tests are run against e.g. `-DnumberDataSets=1`. Typically you would set the `numberURLs` and `numberDataSets` system properties when you want to quickly run a single test.
 
 Tests can be run in parallel. The number of parallel tests being run is determined by the `numberOfThreads` system property.
+
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/6.paralleltest), which demonstrate running multiple tests in parallel.
