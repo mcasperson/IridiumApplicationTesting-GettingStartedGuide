@@ -103,3 +103,49 @@ Where a feature file has been referenced with a URL (e.g.` -DtestSource=https://
  For example, if we ran WAT with `-DimportBaseUrl=http://whatever/fragments/`, the file imported from the example above would be `http://whatever/fragments/zap/enablezap.fragment`.
 
  If the feature file is file from the local file system, relative imports are located from the location of the feature file.
+ 
+## Using Tags
+
+ You can make use of Cucumber tags, which are documented at https://github.com/cucumber/cucumber/wiki/Tags.
+ 
+## Override Tags
+
+ Tags are supplied with the tagsOverride system property e.g. `-DtagsOverride=~@OPM,@SOMETAG;~@CTM`
+ 
+ Tags are first split on a semicolon into groups that are "and'ed" together. So the string ~@OPM,@SOMETAG;~@CTM is broken down into the logic ~@OPM,@SOMETAG AND ~@CTM.
+ 
+ Tags are then split on a comma into groups that are "or'ed" together. So the strings ~@OPM,@SOMETAG and ~@CTM are broken down into the logic (~@OPM OR @SOMETAG) AND ~@CTM.
+ 
+ This means that `~@OPM,@SOMETAG;~@CTM` will run all scenarios that (don't have the @OPM tag OR do have the @SOMETAG tag) AND don't have the @CTM tag.
+ 
+## Tags in configuration
+
+Tags can also be assigned to the URL mappings defined in the configuration file. These tags are used to include or exclude certain aspects of a common test script depending on the feature group that was used to run the application.
+
+In this example, we have three default URLs assigned to the feature group CQS-QA. Because only the budget branded car quote and salve application will autoregister with OPM, the two partner brands both exclude any step tagged with @OPM.
+
+This means the same script can be run across multiple brands, with tags allowing us to selectively include or exclude those scenarios as appropriate.
+
+```xml
+<profile>
+   <urlMappings>
+      <featureGroup name="CQS-NXQ">
+        <urlMapping>
+            <url
+name="default">https://qa.hostname.com.au/car/new_quote
+.jsp?hSty=BUDD</url>
+        </urlMapping>
+        <urlMapping tags="~@OPM">
+            <url
+name="default">https://qa.hostname/car/new_quote
+.jsp?hSty=1FOW</url>
+        </urlMapping>
+        <urlMapping tags="~@OPM">
+            <url
+name="default">https://qa.hostname/car/new_quote
+.jsp?hSty=BBUY</url>
+        </urlMapping>
+     </urlMappings>
+   </featureGroup>
+</profile>
+```
