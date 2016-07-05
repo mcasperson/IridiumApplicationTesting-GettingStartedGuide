@@ -1,4 +1,4 @@
-# My Awesome Book
+# Introduction
 
 The Iridium Application Testing (IAT) tool has been designed to provide a way for automated scripts to interact with and validate the operation of our web based applications.
 
