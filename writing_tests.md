@@ -92,9 +92,9 @@ In order to make use of the URLs defined in the configuration file, the directiv
 # FeatureGroup: HQQ-QA,HQQ-PreProd
 Feature: Test Mobile Home Quote (HQQ)
  Scenario: Complete First Page
-        # HQQ needs a fairly large default wait time, otherwise it is possible that
-clicks will be
-        # made on buttons that are no available.
+  # HQQ needs a fairly large default wait time, 
+  # otherwise it is possible that clicks will be
+  # made on buttons that are no available.
   When I set the default wait time between steps to "3"
   And I open the application
   And I wait "120" seconds for the element with the ID of "Continue" to be displayed
