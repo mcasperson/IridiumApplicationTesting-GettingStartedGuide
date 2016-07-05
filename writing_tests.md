@@ -18,15 +18,15 @@ Feature: Test SAR
  Note the use of comments in the test script. Comments start with the # character, and are ignored by IAT.
  
 ```
-Scenario: Launch App
-   # This defines the amount of time to wait in seconds between the execution of the
-steps.
+ Scenario: Launch App
+   # This defines the amount of time to wait in seconds 
+   # between the execution of the steps.
    When I set the default wait time between steps to "2"
-   # This opens the default URL defined for the application. The process of defining a
-default URL is discussed later.
+   # This opens the default URL defined for the application. 
+   # The process of defining a default URL is discussed later.
    And I open the application
-   # This waits for an element on the page to be displayed. We assume that once this
-element is displayed that the page has been loaded.
+   # This waits for an element on the page to be displayed. 
+   # We assume that once this element is displayed that the page has been loaded.
    And I wait "30" seconds for the element with the ID of "SARQIC_button" to be
 displayed
 ```
@@ -44,14 +44,14 @@ displayed
 ```
 Feature: Test SAR
  Scenario: Launch App
-   # This defines the amount of time to wait in seconds between the execution of the
-steps.
+   # This defines the amount of time to wait in seconds 
+   # between the execution of the steps.
    When I set the default wait time between steps to "2"
-   # This opens the default URL defined for the application. The process of defining a
-default URL is discussed later.
+   # This opens the default URL defined for the application. 
+   # The process of defining a default URL is discussed later.
    And I open the application
-   # This waits for an element on the page to be displayed. We assume that once this
-element is displayed that the page has been loaded.
+   # This waits for an element on the page to be displayed. 
+   # We assume that once this element is displayed that the page has been loaded.
    And I wait "30" seconds for the element with the ID of "SARQIC_button" to be
 displayed
 ```
