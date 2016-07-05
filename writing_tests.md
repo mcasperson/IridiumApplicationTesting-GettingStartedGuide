@@ -52,11 +52,11 @@ This is an example configuration file.
   <featureGroup name="HQQ-QA">
    <urlMapping>
     <url
-name="default">https://qa-hostname.com/hqq/new_quote.jsp?hSty=BUDD</url
+name="default">https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD</url
 >
    </urlMapping>
   </featureGroup>
-  <featureGroup name="HQQ-Preproduction">
+  <featureGroup name="HQQ-PreProd">
    <urlMapping>
     <url
 name="default">https://preproduction.hostname.com/hqq/new_quote.jsp?hSty=BUDD<
@@ -66,3 +66,24 @@ name="default">https://preproduction.hostname.com/hqq/new_quote.jsp?hSty=BUDD<
     </urlMappings>
 </profile>
 ```
+
+Here we define two feature groups: `HQQ-QA` and `HQQ-PreProd`. Inside each of these feature groups we have defined the default url for QA and PreProduction.
+
+In order to make use of the URLs defined in the configuration file, the directive `# FeatureGroup: HQQ-QA,HQQ-PreProd` needs to be added to the top of the script. This comma separated list defines the feature groups that can be used with the script.
+
+```
+# FeatureGroup: HQQ-QA,HQQ-PreProd
+Feature: Test Mobile Home Quote (HQQ)
+ Scenario: Complete First Page
+        # HQQ needs a fairly large default wait time, otherwise it is possible that
+clicks will be
+        # made on buttons that are no available.
+  When I set the default wait time between steps to "3"
+  And I open the application
+  And I wait "120" seconds for the element with the ID of "Continue" to be displayed
+  And I click the element with the ID of "Continue"
+```
+
+When IAT is run with the `featureGroupName` system property set to HQQ-QA, the step `And I open the application` will open the URL https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, as this is the default URL assigned to the HQQ-QA feature group in the configuration file.
+
+Alternatively, IAT could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. In fact, the `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
