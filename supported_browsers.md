@@ -36,3 +36,8 @@ PhantomJS can be downloaded from http://phantomjs.org/download.html.
 Safari has an extension called `SafariDriver.safariextz` that needs to be installed before IAT can interact with the browser. 
 
 This can be downloaded from http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz.
+
+### Configuring Firefox
+
+Firefox works without any additional configuration.
+
