@@ -27,3 +27,10 @@ IAT can be run multiple different ways. Which method you choose depends on your 
  ```
  ./gradlew clean run -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -Dhttps://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature
  ```
+
+## JAR File
+ Tests can be run from a local copy of the IAT UberJar. To launch a test, run the followig command:
+ 
+ ```
+ java -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -Dhttps://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature jar webapptesting-signed.jar
+ ```
