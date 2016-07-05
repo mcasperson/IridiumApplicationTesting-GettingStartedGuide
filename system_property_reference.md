@@ -15,11 +15,15 @@ This option accepts a complete file path, or a URL.
 ## testSource *
 Path to E2E tests.
 
-If this is a directory, it will be scanned for .feature files that match the `featureGroupName` setting.
+If this is a directory, it will be scanned for .feature files that have a matching entry in the `#FeatureGroup:` comment which equals the `featureGroupName` setting.
+
 If it is a file or a URL, the script is run disregrading the `featureGroupName` setting.
 
 ## testDestination
 Name of the browser to run the tests (Chrome, Firefox, IE). Select BrowserStack to run the tests remotely in BrowserStack.
+
+Valid options are:
+
 
 ## featureGroupName
 This is optional, and is only used when `testSource` references a directory. 
