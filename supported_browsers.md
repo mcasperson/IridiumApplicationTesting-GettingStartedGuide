@@ -29,7 +29,7 @@ The Chrome driver be downloaded from http://chromedriver.storage.googleapis.com/
 
 The `phantomjs.binary.path` system property needs to be set to the full path of the `phantomjs` or `phantomjs.exe` executable. 
 
-PhantomJs can be downloaded from http://phantomjs.org/download.html.
+PhantomJS can be downloaded from http://phantomjs.org/download.html.
 
 ### Configuring Safari
 
