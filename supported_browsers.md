@@ -1,4 +1,4 @@
-# Supported Browsers
+# Supported Local Browsers
 
 IAT supports running tests on multiple browsers. The browser is configured using the `testDestination` system property. The following values are valid for this system property:
 
