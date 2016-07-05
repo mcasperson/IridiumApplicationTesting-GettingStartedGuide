@@ -103,6 +103,8 @@ When IAT is run with the `featureGroupName` system property set to HQQ-QA, the s
 
 Alternatively, IAT could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. In fact, the `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
 
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/4.urlmappings), which demonstrates the use of a configration file.
+
 ## Splitting Up Tests
  Tests can be split up so common Scenarios can be shared between multiple features. 
  
@@ -122,6 +124,8 @@ Where a feature file has been referenced with a URL (e.g.` -DtestSource=https://
 ## Using Tags
 
  You can make use of Cucumber tags, which are documented at https://github.com/cucumber/cucumber/wiki/Tags.
+ 
+ See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/7.tags), which demonstrates the use of tags.
  
 ## Override Tags
 
@@ -164,6 +168,9 @@ This means the same script can be run across multiple brands, with tags allowing
    </featureGroup>
 </profile>
 ```
+
+See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/8.configurationtags), which demonstrates the use of tags in a configuration file.
+
 ## Using Aliases
 
  Often the xpath, id, css selector or other value used to identify an element on the page has an obscure name which makes a step harder to understand.
