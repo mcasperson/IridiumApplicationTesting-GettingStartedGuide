@@ -68,16 +68,16 @@ This is an example configuration file.
     <urlMappings>
   <featureGroup name="HQQ-QA">
    <urlMapping>
-    <url
-name="default">https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD</url
->
+    <url name="default">
+      https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD
+    </url>
    </urlMapping>
   </featureGroup>
   <featureGroup name="HQQ-PreProd">
    <urlMapping>
-    <url
-name="default">https://preproduction.hostname.com/hqq/new_quote.jsp?hSty=BUDD<
-/url>
+    <url name="default">
+      https://preproduction.hostname.com/hqq/new_quote.jsp?hSty=BUDD
+    </url>
    </urlMapping>
   </featureGroup>
     </urlMappings>
