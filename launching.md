@@ -21,5 +21,9 @@ IAT can be run multiple different ways. Which method you choose depends on your 
  11. [Multiple Apps](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/11.multipleapps/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/11.multipleapps))
  12. [Loops](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/12.loops/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/12.loops))
  
+## Gradle
+ Tests can be run using the Gradle build script. To launch a test, run the following command:
  
-
+ ```
+ ./gradlew clean run -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -Dhttps://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature
+ ```
