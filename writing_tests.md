@@ -218,3 +218,13 @@ Data set collections then include individual data sets. Each data set is combine
 ```
 
 Data set collections are referenced with the `dataset` system property e.g.` -Ddataset=http://whatever/data/cqs-dataset.xml`
+
+## Running Multiple Tests
+
+As you have seen, the configuration file can hold multiple URL mappings for a feature group, and a data set collection can contain multiple data sets.
+
+By default, each URL in a URL mapping and each data set results in a new test being run. For example, if you had 2 URL mappings and a data set collection with 3 data sets, the test would be run 6 times (2 urls * 3 data sets).
+
+The `numberURLs` system property can be used to limit the number of URLs that are selected when running a test e.g. `-DnumberURLs=1`. The `numberDataSets` property can be used to limit the number of data sets that tests are run against e.g. `-DnumberDataSets=1`. Typically you would set the `numberURLs` and `numberDataSets` system properties when you want to quickly run a single test.
+
+Tests can be run in parallel. The number of parallel tests being run is determined by the `numberOfThreads` system property.
