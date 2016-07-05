@@ -21,7 +21,7 @@ The Opera driver be downloaded from https://github.com/operasoftware/operachromi
 
 ### Configuring Chrome
 
-The `webdriver.chrome.driver` system property needs to be set to the fill path pf the `chromedriver` or `chromedriver.exe` executable.
+The `webdriver.chrome.driver` system property needs to be set to the full path pf the `chromedriver` or `chromedriver.exe` executable.
 
 The Chrome driver be downloaded from http://chromedriver.storage.googleapis.com/index.html?path=2.22/.
 
@@ -41,3 +41,8 @@ This can be downloaded from http://selenium-release.storage.googleapis.com/2.48/
 
 Firefox works without any additional configuration.
 
+### Configuring IE
+
+The `webdriver.ie.driver` system property needs to be set to the full path of the IE driver.
+
+The IE driver can be downloaded from http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_Win32_2.53.1.zip or http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_x64_2.53.1.zip.
