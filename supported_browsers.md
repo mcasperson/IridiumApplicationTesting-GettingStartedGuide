@@ -23,4 +23,6 @@ The `webdriver.chrome.driver` system property needs to be set to the fill path p
 
 ### Configuring PhantomJS
 
-The `phantomjs.binary.path` system property needs to be set to the full path of the executable. This can be downloaded from http://phantomjs.org/download.html.
+The `phantomjs.binary.path` system property needs to be set to the full path of the `phantomjs` or `phantomjs.exe` executable. 
+
+PhantomJs can be downloaded from http://phantomjs.org/download.html.
