@@ -149,3 +149,29 @@ name="default">https://qa.hostname/car/new_quote
    </featureGroup>
 </profile>
 ```
+## Using Aliases
+
+ Often the xpath, id, css selector or other value used to identify an element on the page has an obscure name which makes a step harder to understand.
+
+ Aliases provide a solution for this by mapping a readable name to an unreadable value. This is demonstrated in the example below.
+ 
+```
+# Description: Tests of the SAR application
+# FeatureGroup: SAR-INT, SAR-QA
+Feature: Test SAR
+   @PAGEOBJECT
+   Scenario: Generate Page Object
+    # This is a kind of page object, where we map ids, xpaths and other attributes
+    # tomore readable names.
+    Given the alias mappings
+     | ContinueButtonPage1 | SARQIC_button |
+@LAUNCH
+Scenario: Launch App
+When I set the default wait time between steps to "2"
+And I open the application
+And I wait "30" seconds for the element with the ID alias of "ContinueButtonPage1" to be displayed
+```
+
+The step `Given the alias mappings` accepts a data table which is a key/value mapping between the alias name and what is typically a string used to identify an element on the page.
+
+The step `And I wait "30" seconds for the element with the ID alias of "ContinueButtonPage1" to be displayed` then references the alias to identify the ID of the element.
