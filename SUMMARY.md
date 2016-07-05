@@ -4,4 +4,5 @@
 * [Installation](installation.md)
 * [Launching](launching.md)
 * [Writing Tests](writing_tests.md)
+* Security Testing
 
