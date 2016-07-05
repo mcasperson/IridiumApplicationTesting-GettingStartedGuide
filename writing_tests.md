@@ -175,3 +175,46 @@ And I wait "30" seconds for the element with the ID alias of "ContinueButtonPage
 The step `Given the alias mappings` accepts a data table which is a key/value mapping between the alias name and what is typically a string used to identify an element on the page.
 
 The step `And I wait "30" seconds for the element with the ID alias of "ContinueButtonPage1" to be displayed` then references the alias to identify the ID of the element.
+
+## Using DataSet Collections
+
+Data set collections are XML files that contain multiple sets of alias mappings. These are used to run a test script multiple times with different inputs.
+
+Data set collections include one common data set, which defines alias mappings shared between all other data sets. As the name suggests, a common data set provides the ability to define common data once and share it with each data set.
+
+Data set collections then include individual data sets. Each data set is combined with the common data set to provide a set of aliased values that are used with a single test run.
+
+```xml
+<profile>
+   <dataSets>
+      <commonDataSet>
+  <setting name="CarRegoValue">ASD123</setting>
+      </commonDataSet>
+      <dataSet>
+         <!-- Car Details -->
+         <setting name="CarDetailsYearIndex">2</setting>
+         <setting name="CarDetailsMakeIndex">1</setting>
+         <setting name="CarDetailsTransmissionIndex">2</setting>
+         <setting name="CarDetailsFuelIndex">1</setting>
+         <setting name="CarDetailsModelIndex">2</setting>
+         <setting name="CarDetailsRedbookCodeIndex">2</setting>
+         <setting name="CarDetailsUseIndex">1</setting>
+         <setting name="CarDetailsOdometerIndex">1</setting>
+         <setting name="CarRegoValue">ASD123</setting>
+      </dataSet>
+  <dataSet>
+         <!-- Car Details -->
+         <setting name="CarDetailsYearIndex">3</setting>
+         <setting name="CarDetailsMakeIndex">2</setting>
+         <setting name="CarDetailsTransmissionIndex">3</setting>
+         <setting name="CarDetailsFuelIndex">2</setting>
+         <setting name="CarDetailsModelIndex">3</setting>
+         <setting name="CarDetailsRedbookCodeIndex">3</setting>
+         <setting name="CarDetailsUseIndex">2</setting>
+         <setting name="CarDetailsOdometerIndex">2</setting>
+      </dataSet>
+   </dataSets>
+</profile>
+```
+
+Data set collections are referenced with the `dataset` system property e.g.` -Ddataset=http://whatever/data/cqs-dataset.xml`
