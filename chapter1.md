@@ -1,3 +1,6 @@
 # Installation
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+## Prerequisites
+IAT is written against Java 8, which must be available on your PC before you can run the application.
+
+## Configuring Java
