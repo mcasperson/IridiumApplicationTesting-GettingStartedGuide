@@ -17,12 +17,22 @@ Some browsers require additional software or extensions to be downloaded before 
 
 The `webdriver.opera.driver` system property needs to be set to the full path of the `operadriver` or `operadriver.exe` executable.
 
+The Opera driver be downloaded from https://github.com/operasoftware/operachromiumdriver/releases.
+
 ### Configuring Chrome
 
 The `webdriver.chrome.driver` system property needs to be set to the fill path pf the `chromedriver` or `chromedriver.exe` executable.
+
+The Chrome driver be downloaded from http://chromedriver.storage.googleapis.com/index.html?path=2.22/.
 
 ### Configuring PhantomJS
 
 The `phantomjs.binary.path` system property needs to be set to the full path of the `phantomjs` or `phantomjs.exe` executable. 
 
 PhantomJs can be downloaded from http://phantomjs.org/download.html.
+
+### Configuring Safari
+
+Safari has an extension called `SafariDriver.safariextz` that needs to be installed before IAT can interact with the browser. 
+
+This can be downloaded from http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz.
