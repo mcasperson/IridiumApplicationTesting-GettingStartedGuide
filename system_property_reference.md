@@ -3,13 +3,13 @@
 System properties marked as * are required
 
 ## configuration
-We're no longer using DDS to store testing configuration so you MUST specify .xml file with testing profile.
-Usually that is http://gitstash/projects/AGIC/repos/end-to-end-tests/browse/settings/configuration.xml.
+Specify the location of the configuration XML file.
+
 This option accepts a complete file path, or a URL.
 
 ## dataset
-We're no longer using DDS to store data sets configuration so you MUST specify .xml file with dataset.
-Check http://gitstash/projects/AGIC/repos/end-to-end-tests/browse/data to see existing dataset profiles.
+Specify the location of the data set collection XML file.
+
 This option accepts a complete file path, or a URL.
 
 ## testSource *
