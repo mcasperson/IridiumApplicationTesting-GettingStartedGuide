@@ -148,19 +148,19 @@ This means the same script can be run across multiple brands, with tags allowing
    <urlMappings>
       <featureGroup name="CQS-NXQ">
         <urlMapping>
-            <url
-name="default">https://qa.hostname.com.au/car/new_quote
-.jsp?hSty=BUDD</url>
+            <url name="default">
+              https://qa.hostname.com.au/car/new_quote.jsp?hSty=BUDD
+            </url>
         </urlMapping>
         <urlMapping tags="~@OPM">
-            <url
-name="default">https://qa.hostname/car/new_quote
-.jsp?hSty=1FOW</url>
+            <url name="default">
+              https://qa.hostname/car/new_quote.jsp?hSty=1FOW
+            </url>
         </urlMapping>
         <urlMapping tags="~@OPM">
-            <url
-name="default">https://qa.hostname/car/new_quote
-.jsp?hSty=BBUY</url>
+            <url name="default">
+              https://qa.hostname/car/new_quote.jsp?hSty=BBUY
+            </url>
         </urlMapping>
      </urlMappings>
    </featureGroup>
@@ -178,8 +178,8 @@ name="default">https://qa.hostname/car/new_quote
 Feature: Test SAR
    @PAGEOBJECT
    Scenario: Generate Page Object
-    # This is a kind of page object, where we map ids, xpaths and other attributes
-    # tomore readable names.
+    # This is a kind of page object, where we map ids, xpaths and 
+    # other attributes to more readable names.
     Given the alias mappings
      | ContinueButtonPage1 | SARQIC_button |
 @LAUNCH
