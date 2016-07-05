@@ -39,6 +39,23 @@ displayed
  
  **And I wait "30" seconds for the element with the ID of "SARQIC_button" to be displayed** pauses the execution of the test script until a HTML element with the ID attribute of SARQIC_button has been displayed on the page. We use the fact that this element has been displayed as indication that the page has loaded.
  
+ The complete script looks like this:
+ 
+```
+Feature: Test SAR
+ Scenario: Launch App
+   # This defines the amount of time to wait in seconds between the execution of the
+steps.
+   When I set the default wait time between steps to "2"
+   # This opens the default URL defined for the application. The process of defining a
+default URL is discussed later.
+   And I open the application
+   # This waits for an element on the page to be displayed. We assume that once this
+element is displayed that the page has been loaded.
+   And I wait "30" seconds for the element with the ID of "SARQIC_button" to be
+displayed
+```
+ 
 ## Using Configurations
 
  Configuration files provide the ability to run the same script against different environments. Typically a test script will need to be run against multiple environments (Integration, QA, PreProduction etc) and against multiple brands. The actual steps run by the script will be largely identical in all environments and all brands, but the URLs used to access the applications change.
