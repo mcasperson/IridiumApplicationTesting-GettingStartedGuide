@@ -4,7 +4,7 @@ IAT can be run multiple different ways. Which method you choose depends on your 
 ## Java Web Start (JNLP)
  Web Start provides an easy way to launch IAT without requiring any special software beyond a standard Java 8 installation.
  
- IAT comes with a number of example test scripts which can be launched via Web Start. To run these examples, right click on the links below and save the jnlp files to the local disk. Then run the files with the `javaws` application.
+ IAT comes with example test scripts which are launched via Web Start. To run these examples, right click on the links below and save the jnlp files to the local disk. Then run the files with the `javaws` application.
  
  Note that you must trust the GitHub URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details.
  
