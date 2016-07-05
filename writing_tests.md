@@ -27,8 +27,7 @@ Feature: Test SAR
    And I open the application
    # This waits for an element on the page to be displayed. 
    # We assume that once this element is displayed that the page has been loaded.
-   And I wait "30" seconds for the element with the ID of "SARQIC_button" to be
-displayed
+   And I wait "30" seconds for the element with the ID of "SARQIC_button" to be displayed
 ```
 
  Let's break down this script.
@@ -52,8 +51,7 @@ Feature: Test SAR
    And I open the application
    # This waits for an element on the page to be displayed. 
    # We assume that once this element is displayed that the page has been loaded.
-   And I wait "30" seconds for the element with the ID of "SARQIC_button" to be
-displayed
+   And I wait "30" seconds for the element with the ID of "SARQIC_button" to be displayed
 ```
  
 ## Using Configurations
