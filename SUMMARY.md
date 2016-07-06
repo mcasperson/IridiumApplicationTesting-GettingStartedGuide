@@ -6,7 +6,7 @@
 * [Launching](launching.md)
 * [Supported Browsers](supported_browsers.md)
 * [Writing Tests](writing_tests.md)
+* Step Details
 * [Security Testing](security_testing.md)
 * [System Property Reference](system_property_reference.md)
-* Step Details
 
