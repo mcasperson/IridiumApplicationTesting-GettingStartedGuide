@@ -16,7 +16,7 @@ Feature: Test SAR
 
  Underneath this we have scenarios that represent some related actions. In this example we will define some default options that will be used throughout the feature, open the StandAlone Roadside application, and wait for it to load.
  
- Note the use of comments in the test script. Comments start with the # character, and are ignored by IAT.
+ Note the use of comments in the test script. Comments start with the # character, and are ignored by Iridium.
  
 ```
  Scenario: Launch App
@@ -120,7 +120,7 @@ See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree
  This comment will be replaced with the contents of the file at the specified path.
 Where a feature file has been referenced with a URL (e.g.` -DtestSource=https://whatever.com/test.feature`), the location of the imported files is found using the `importBaseUrl` system property, which defines the location from which relative imports are located.
 
- For example, if we ran WAT with `-DimportBaseUrl=http://whatever/fragments/`, the file imported from the example above would be `http://whatever/fragments/zap/enablezap.fragment`.
+ For example, if we ran Iridium with `-DimportBaseUrl=http://whatever/fragments/`, the file imported from the example above would be `http://whatever/fragments/zap/enablezap.fragment`.
 
  If the feature file is file from the local file system, relative imports are located from the location of the feature file.
  
@@ -262,6 +262,6 @@ See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree
 
 ## Modifying Requests
 
- IAT has included [BrowserMob](https://github.com/lightbody/browsermob-proxy), which provides the ability to modify HTTP requests made by browsers whose drivers support the use of a proxy (not all browser drivers support the use of a proxy, see the [Security Testing](security_testing.md) for more details).
+ Iridium has included [BrowserMob](https://github.com/lightbody/browsermob-proxy), which provides the ability to modify HTTP requests made by browsers whose drivers support the use of a proxy (not all browser drivers support the use of a proxy, see the [Security Testing](security_testing.md) for more details).
  
  BrowserMob supports the steps like `And I block access to the URL regex "http://google.com" with response "500"`, which will intercept any requests to http://google.com and return a HTTP 500 response code.
