@@ -1,6 +1,6 @@
 # Building
 
-Run the following command to build IAT:
+Run the following command to build Iridium:
 
 ```
 ./gradlew clean shadowJar
