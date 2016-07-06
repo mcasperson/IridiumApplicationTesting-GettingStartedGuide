@@ -258,3 +258,9 @@ The `numberURLs` system property can be used to limit the number of URLs that ar
 Tests can be run in parallel. The number of parallel tests being run is determined by the `numberOfThreads` system property.
 
 See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/6.paralleltest), which demonstrate running multiple tests in parallel.
+
+## Modifying Requests
+
+ IAT has included [BrowserMob](https://github.com/lightbody/browsermob-proxy), which provides the ability to modify HTTP requests made by browsers whose drivers support the use of a proxy (not all browser drivers support the use of a proxy, see the [Security Testing](security_testing.md) for more details).
+ 
+ BrowserMob supports the steps like `And I block access to the URL regex "http://google.com" with response "500"`, which will intercept any requests to http://google.com and return a HTTP 500 response code.
