@@ -7,7 +7,8 @@
 A feature is composed of one or more scenarios, and represents a complete test of an entire application, or a significant feature in a web application. For example, a feature could be an end to end test of a quite and sale application which tests the entire process of obtaining a quote and buying a policy.
 
  A scenario holds a one or more steps that are logically grouped to represent some related actions within a web application. For example, a scenario might defines the steps required to fill out the first page of a quote, or login to an application.
-Steps are actions that represent single interactions with a web page. They could be opening a URL, clicking a button or filling in a text box. The first line in a feature is the name of the feature itself:
+ 
+ Steps are actions that represent single interactions with a web page. They could be opening a URL, clicking a button or filling in a text box. The first line in a feature is the name of the feature itself:
 
 ```
 Feature: Test SAR
