@@ -36,3 +36,7 @@ These steps will instruct ZAP to:
 * run the active scanner, during which ZAP will probe the URLs it knows about (via those passed through it during the passive scan and through the spidering process) for various known vulnerabilities
 * save the report file
 * fail the Cucumber test if any medium level or higher vulnerabilities were found
+
+## Browser Support
+
+ Not all browser drivers support the use of a proxy. Firefox and PhantomJS work, but others like Chrome and Opera don't. ZAP will not work as expected with browsers that do not support a proxy.
