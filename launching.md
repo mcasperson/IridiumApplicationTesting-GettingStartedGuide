@@ -22,6 +22,7 @@ IAT can be run multiple different ways. Which method you choose depends on your 
  10. [Multiple Brands](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/10.multiplebrands/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/10.multiplebrands))
  11. [Multiple Apps](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/11.multipleapps/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/11.multipleapps))
  12. [Loops](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/12.loops/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/12.loops))
+ 13. [Modifying Requests with BrowserMob](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/13.blockrequests/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/13.blockrequests))
  
 ## Gradle
  Tests can be run using the Gradle build script. To launch a test, run the following command:
