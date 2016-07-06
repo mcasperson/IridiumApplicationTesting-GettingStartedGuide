@@ -104,7 +104,7 @@ Feature: Test Mobile Home Quote (HQQ)
 
 When Iridium is run with the `featureGroupName` system property set to HQQ-QA, the step `And I open the application` will open the URL https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, as this is the default URL assigned to the HQQ-QA feature group in the configuration file.
 
-Alternatively, IAT could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. In fact, the `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
+Alternatively, Iridium could be run with the `appURLOverride` system property set to https://qa.hostname.com/hqq/new_quote.jsp?hSty=BUDD, which override the default URL defined in the configuration file. The `featureGroupName` system property is optional in this situation where a default URL is supplied as a system property.
 
 See [this example](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/4.urlmappings), which demonstrates the use of a configuration file.
 
