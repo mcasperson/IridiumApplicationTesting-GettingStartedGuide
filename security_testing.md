@@ -2,7 +2,7 @@
 
 ## Enabling ZAP
 
-To enable the Zed Attack Proxy, you need to set the system property `startInternalProxy` to zap e.g. `-DstartInternalProxy=zap`.
+To enable the [Zed Attack Proxy](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project), you need to set the system property `startInternalProxy` to zap e.g. `-DstartInternalProxy=zap`.
 
 ## Testing With ZAP
 
