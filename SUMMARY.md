@@ -7,5 +7,5 @@
 * [Writing Tests](writing_tests.md)
 * [Security Testing](security_testing.md)
 * [System Property Reference](system_property_reference.md)
-* Building
+* [Building](building.md)
 
