@@ -8,6 +8,8 @@ IAT can be run multiple different ways. Which method you choose depends on your 
  
  Note that you must trust the GitHub URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details.
  
+ Make sure you have Firefox installed, as the examples are configured to use it.
+ 
  1. [Open Application](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/1.openapp/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/1.openapp))
  2. [Using Aliases](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/2.aliases/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/2.aliases))
  3. [Address Capture](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/3.addresscapture/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/3.addresscapture))
