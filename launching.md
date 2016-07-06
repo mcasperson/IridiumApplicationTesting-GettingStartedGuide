@@ -1,10 +1,10 @@
 # Launching
-IAT can be run multiple different ways. Which method you choose depends on your use case.
+Iridium can be run multiple different ways. Which method you choose depends on your use case.
 
 ## Java Web Start (JNLP)
- Web Start provides an easy way to launch IAT without requiring any special software beyond a standard Java 8 installation.
+ Web Start provides an easy way to launch Iridium without requiring any special software beyond a standard Java 8 installation.
  
- IAT comes with example test scripts which are launched via Web Start. To run these examples, right click on the links below and save the jnlp files to the local disk. Then run the files with the `javaws` application.
+ Iridium comes with example test scripts which are launched via Web Start. To run these examples, right click on the links below and save the jnlp files to the local disk. Then run the files with the `javaws` application.
  
  Note that you must trust the GitHub URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details.
  
@@ -32,7 +32,7 @@ IAT can be run multiple different ways. Which method you choose depends on your 
  ```
 
 ## JAR File
- Tests can be run from a local copy of the IAT UberJar. To launch a test, run the followig command:
+ Tests can be run from a local copy of the Iridium UberJar. To launch a test, run the followig command:
  
  ```
  java -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -DtestSource=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature -DtestDestination=FIREFOX jar WebappTesting.jar
