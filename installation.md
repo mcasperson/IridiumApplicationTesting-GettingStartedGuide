@@ -13,3 +13,9 @@ You will also want to enable the Web Start console. This gives you feedback on h
 Click the **Advanced** tab, and select the **Show Console** option.
 
 ![](Screen Shot 2016-07-07 at 5.08.09 PM.png)
+
+## Windows Firewall
+
+The first time you run the application in Windows, you may be prompted to allow it to access the network. Click the **Allow access** button if you see this prompt.
+
+![](Capture.PNG)
