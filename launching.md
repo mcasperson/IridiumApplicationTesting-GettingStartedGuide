@@ -10,6 +10,12 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  
  Make sure you have Firefox installed, as the examples are configured to use it.
  
+ The following demos run against a dummy or public websites that anyone can use.
+ 
+ 1. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
+ 
+ The following demos run against Auto & General's quote and sale websites. If you run these more than once or twice you'll be blocked, so they are more useful as code examples than as actual working demos.
+ 
  1. [Open Application](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/1.openapp/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/1.openapp))
  2. [Using Aliases](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/2.aliases/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/2.aliases))
  3. [Address Capture](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/3.addresscapture/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/3.addresscapture))
@@ -23,7 +29,6 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  11. [Multiple Apps](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/11.multipleapps/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/11.multipleapps))
  12. [Loops](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/12.loops/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/12.loops))
  13. [Modifying Requests with BrowserMob](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/13.blockrequests/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/13.blockrequests))
- 14. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
  
 ## Gradle
  Tests can be run using the Gradle build script. To launch a test, run the following command:
