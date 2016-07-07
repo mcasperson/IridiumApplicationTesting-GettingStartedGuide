@@ -12,7 +12,7 @@ Iridium can be run multiple different ways. Which method you choose depends on y
 
 |Important|  |
 |-|-|
-|![](Exclamation_mark-red.png) | Make sure you have Firefox installed, as the examples are configured to use it. |
+|![](Exclamation_mark-red.png) |You must have Firefox installed, as the examples are configured to use it. |
 
 |Note|  |
 |-|-|
