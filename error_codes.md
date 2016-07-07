@@ -1,4 +1,5 @@
 # Error Codes
+This table has descriptions for codes that may be displayed by Iridium.
 
 | Error Code | Description |
 | -- | -- |
