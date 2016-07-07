@@ -10,19 +10,21 @@ Iridium can be run multiple different ways. Which method you choose depends on y
 |-|-|
 |![](Exclamation_mark-red.png) | You must trust the S3 URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details. |
 
+| | Important |
+|-|-|
+|![](Exclamation_mark-red.png) | Make sure you have Firefox installed, as the examples are configured to use it. |
+
 | | Note |
 |-|-|
 |![](light-bulbs-Light-Bulb.jpg) | The Web Start download bar will appear to freeze, restart and then jump to 100%. This is expected.|
  
- 
- Make sure you have Firefox installed, as the examples are configured to use it.
  
  The following demos run against dummy or public websites that anyone can use.
  
  1. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
  
 
-The following demos run against Auto & General's quote and sale websites. If you run these more than once or twice you'll be blocked, so they are more useful as code examples than as actual working demos.
+The following demos run against Auto & General's quote and sale websites. If you run these more than once or twice you'll be blocked by a firewall, so they are more useful as code examples than as actual working demos.
 
  
  1. [Open Application](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/1.openapp/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/1.openapp))
