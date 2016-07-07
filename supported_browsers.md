@@ -13,6 +13,14 @@ Iridium supports running tests on multiple browsers. The browser is configured u
 
 Some browsers require additional software or extensions to be downloaded before that can be used with Iridium. These downloads are listed in http://www.seleniumhq.org/download/.
 
+### Automatic Driver Configuration
+
+Iridium supplies drivers for Chrome, IE, Opera and PhantomJS if no driver is specified via system properties.
+
+Specifying the system properties for the browser drivers overrides the drivers supplied with Iridium.
+
+Browsers like Safari still need to have the extensions manually installed.
+
 ### Configuring Opera
 
 The `webdriver.opera.driver` system property needs to be set to the full path of the `operadriver` or `operadriver.exe` executable.
