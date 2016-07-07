@@ -23,6 +23,7 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  
  1. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
  2. [Fragments](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/15.fragments/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/15.fragments))
+ 3. [Remote Tests on BrowserStack](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/16.browserstack/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/16.browserstack))
  
 
 The following demos run against Auto & General's quote and sale websites. If you run these more than once or twice you'll be blocked by a firewall, so they are more useful as code examples than as actual working demos.
