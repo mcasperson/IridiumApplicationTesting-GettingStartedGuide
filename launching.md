@@ -10,7 +10,7 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  
  Make sure you have Firefox installed, as the examples are configured to use it.
  
- The following demos run against a dummy or public websites that anyone can use.
+ The following demos run against dummy or public websites that anyone can use.
  
  1. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
  
