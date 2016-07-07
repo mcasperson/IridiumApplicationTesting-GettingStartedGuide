@@ -5,7 +5,7 @@
 * [Building](building.md)
 * [Launching](launching.md)
 * [Supported Browsers](supported_browsers.md)
-* Remote Testing
+* [Remote Testing](remote_testing.md)
 * [Writing Tests](writing_tests.md)
 * [Step Details](step_details.md)
 * [Security Testing](security_testing.md)
