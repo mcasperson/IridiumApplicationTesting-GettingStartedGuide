@@ -23,8 +23,7 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  
  1. [Security Testing](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/14.securitytest))
  2. [Fragments](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/15.fragments/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/15.fragments))
- 3. [Remote Tests on BrowserStack](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/16.browserstack/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/16.browserstack))
- 
+
 
 The following demos run against Auto & General's quote and sale websites. If you run these more than once or twice you'll be blocked by a firewall, so they are more useful as code examples than as actual working demos.
 
@@ -42,6 +41,7 @@ The following demos run against Auto & General's quote and sale websites. If you
  11. [Multiple Apps](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/11.multipleapps/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/11.multipleapps))
  12. [Loops](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/12.loops/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/12.loops))
  13. [Modifying Requests with BrowserMob](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/13.blockrequests/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/13.blockrequests))
+ 14. [Remote Tests on BrowserStack](https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/16.browserstack/test.jnlp) ([code](https://github.com/AutoGeneral/IridiumApplicationTesting/tree/master/examples/16.browserstack))
  
 ## Gradle
  Tests can be run using the Gradle build script. To launch a test, run the following command:
