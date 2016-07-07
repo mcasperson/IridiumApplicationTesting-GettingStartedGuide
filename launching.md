@@ -45,12 +45,12 @@ The following demos run against Auto & General's quote and sale websites. If you
  Tests can be run using the Gradle build script. To launch a test, run the following command:
  
  ```
- ./gradlew clean run -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -DtestSource=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature -DtestDestination=FIREFOX
+ ./gradlew clean run -DappURLOverride=https://bodgeit.herokuapp.com -DtestSource=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.feature -DtestDestination=FIREFOX
  ```
 
 ## JAR File
  Tests can be run from a local copy of the Iridium UberJar. To launch a test, run the followig command:
  
  ```
- java -Dconfiguration=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/configuration.xml -Ddataset=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/dataset.xml -DfeatureGroupName=CQS-PROD -DtestSource=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/5.dataset/test.feature -DtestDestination=FIREFOX jar WebappTesting.jar
+ java -DappURLOverride=https://bodgeit.herokuapp.com -DtestSource=https://raw.githubusercontent.com/AutoGeneral/IridiumApplicationTesting/master/examples/14.securitytest/test.feature -DtestDestination=FIREFOX jar WebappTesting.jar
  ```
