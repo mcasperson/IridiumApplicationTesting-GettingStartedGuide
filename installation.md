@@ -18,4 +18,4 @@ Click the **Advanced** tab, and select the **Show Console** option.
 
 The first time you run the application in Windows, you may be prompted to allow it to access the network. Click the **Allow access** button if you see this prompt.
 
-![](Capture.PNG)
+
