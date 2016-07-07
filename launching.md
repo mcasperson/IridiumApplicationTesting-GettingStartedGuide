@@ -5,8 +5,15 @@ Iridium can be run multiple different ways. Which method you choose depends on y
  Web Start provides an easy way to launch Iridium without requiring any special software beyond a standard Java 8 installation.
  
  Iridium comes with example test scripts which are launched via Web Start. To run these examples, right click on the links below and save the jnlp files to the local disk. Then run the files with the `javaws` application.
+
+| | Important |
+|-|-|
+|![](Exclamation_mark-red.png) | You must trust the S3 URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details. |
+
+| | Note |
+|-|-|
+|![](light-bulbs-Light-Bulb.jpg) | The Web Start download bar will appear to freeze, restart and then jump to 100%. This is expected.|
  
- |![](light-bulbs-Light-Bulb.jpg) | You must trust the S3 URL that hosts the example JAR files for these Web Start examples to work properly. See the [Installation chapter](installation.md) for more details. |
  
  Make sure you have Firefox installed, as the examples are configured to use it.
  
